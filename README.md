@@ -17,7 +17,7 @@ Data page checksums are disabled.
 
 creating directory /usr/local/pgsql/data ... 
 
-Sams-MacBook-Air:postgres Sam$ initdb -D /usr/local/var/postgres/data
+MacBook-Air:postgres Sam$ initdb -D /usr/local/var/postgres/data
 The files belonging to this database system will be owned by user "Sam".
 This user must also own the server process.
 
