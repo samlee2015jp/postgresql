@@ -17,6 +17,13 @@ Create two new aliases to start and stop your postgres server. They could look s
      alias pg_start="brew services start postgresql"
      alias pg_stop="brew services stop postgresql"
      alias pg_restart="brew services restart postgresql"
+     
+     createdb `whoami`
+     psql whoami
+     
+     create user postgres with encrypted password 'postgres';
+     grant all privileges on database whoami to postgres;
+
 Run the alias you just created: pg_start. Use this comment to start your database service.
 
 alternatively, pg_stop stops your database service.
