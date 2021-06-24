@@ -14,8 +14,9 @@ Run the command: ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgent
 
 Create two new aliases to start and stop your postgres server. They could look something like this:
 
-     alias pg_start="launchctl load ~/Library/LaunchAgents"
-     alias pg_stop="launchctl unload ~/Library/LaunchAgents"
+     alias pg_start="brew services start postgresql"
+     alias pg_stop="brew services stop postgresql"
+     alias pg_restart="brew services restart postgresql"
 Run the alias you just created: pg_start. Use this comment to start your database service.
 
 alternatively, pg_stop stops your database service.
